@@ -1,5 +1,5 @@
 {
-  "name": "file-management-system-reactjs",
+  "name": "gdsclpu-storage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.1",
     "codemirror": "^5.61.1",
+    "env-cmd": "^10.1.0",
     "firebase": "^8.6.2",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
@@ -27,10 +28,10 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "env-cmd -f .env react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "eject": "react-scripts --openssl-legacy-provider eject"
   },
   "eslintConfig": {
     "extends": [

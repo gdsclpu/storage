@@ -28,7 +28,7 @@ const App = () => {
       <Switch>
         <Route exact path={"/"}>
           <NavbarComponent />
-          <h1>Welcome to file management system</h1>
+          <h1>Welcome to GDSC LPU Custom Storage</h1>
         </Route>
         <Route exact path="/login" component={() => <Login />}></Route>
         <Route exact path="/signup" component={() => <Register />}></Route>
